@@ -15,4 +15,4 @@ def test_future_date_rejected():
 
 def test_negative_amount():
     with pytest.raises(ValidationError):
-        ClaimDocument(claimant_name="John Smith", date_of_loss=date(2099, 1, 1), amount_claimed=Decimal(-500))
+        ClaimDocument(claimant_name="John Smith", date_of_loss=date(2024, 1, 1), amount_claimed=Decimal(-500))
